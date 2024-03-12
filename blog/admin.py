@@ -2,11 +2,11 @@ from django.contrib import admin
 from .models import Blog, Category
 
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'is_active', 'is_home', 'slug', 'category')
-    list_editable = ('is_active', 'is_home')
+    list_display = ('title', 'is_active', 'slug', 'category')
+    list_editable = ('is_active',)
     search_fields = ('title', 'description')
     readonly_fields = ('slug',)
-    list_filter = ('is_active', 'is_home', 'category')
+    list_filter = ('is_active', 'category')
 
     def category(self, obj):
         html = ""

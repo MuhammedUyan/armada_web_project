@@ -1,27 +1,25 @@
 {% extends "base.html" %}
 
-{% block title %}Bloglar{% endblock %}
+{% block title %}Ürünler{% endblock %}
 
 {% block content %}
-
     <div class="container mt-3">
         <div class="row">
             <div class="col-3">
-                {% include 'partials/_blogcategories.html' %}
+                {% include 'partials/_productcategories.html' %}
             </div>
             <div class="col-9">
-                <h1>Bütün Bloglar</h1>
+                <h1>Ürünlerimiz</h1>
                 <hr>
-                {% if blogs|length > 0 %}
-                    {% for blog in blogs %}
-                        {% include 'blog/partials/_blog.html' %}
+                {% if products|length > 0 %}
+                    {% for product in products %}
+                        {% include 'product/partials/_product.html' %}
                     {% endfor %}
                 {% else %}
                     <div class="alert alert-warning">
-                        No Blogs
+                        Ürün Yok
                     </div>
                 {% endif %}
-
             </div>
         </div>
     </div>
