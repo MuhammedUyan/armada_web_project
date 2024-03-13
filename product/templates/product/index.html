@@ -12,11 +12,30 @@
 
     <div class="container mt-3">
         <div class="row">
-            <div class="col-3">
-            </div>
-            <div class="col-9">
+            <div class="col-12">
                 <h1>Anasayfa</h1>
                 <hr>
+
+                {% include 'product/partials/_slider.html' %}
+                <br>
+                <h4>Bu Ayın Tercih Edilenleri</h4>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        {% for product in products %}
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="{{ product.image.url }}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ product.title }}</h5>
+                                        <p class="card-text"></p>
+                                        <a href="#" class="btn btn-primary">Keşfet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
 
             </div>
         </div>
