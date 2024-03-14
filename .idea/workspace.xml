@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76bf3705-902d-4b86-81e7-cefda64016a3" name="Changes" comment="site temeli oluşturuldu">
-      <change afterPath="$PROJECT_DIR$/product/templates/product/partials/_slider.html" afterDir="false" />
+    <list default="true" id="76bf3705-902d-4b86-81e7-cefda64016a3" name="Changes" comment="genel düzenlemeler yapıldı">
+      <change afterPath="$PROJECT_DIR$/product/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/instagram-seeklogo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/partials/_footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/templates/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/product/partials/_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product/partials/_product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,30 +51,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.armadaProject.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Python&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.armadaProject.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/armadaProject/static/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\armadaProject\static\img" />
+      <recent name="C:\Users\User\PycharmProjects\armadaProject\product\static\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\armadaProject\static\img" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\product\templates\product" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\product\templates\product\partials" />
-      <recent name="C:\Users\User\PycharmProjects\armadaProject\static\img" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\static\css" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\blog\static\blog\css" />
     </key>
@@ -117,7 +128,8 @@
       <updated>1710160915262</updated>
       <workItem from="1710160940676" duration="29722000" />
       <workItem from="1710243243743" duration="11449000" />
-      <workItem from="1710274470259" duration="15583000" />
+      <workItem from="1710274470259" duration="16224000" />
+      <workItem from="1710418107100" duration="22279000" />
     </task>
     <task id="LOCAL-00001" summary="kullanıcı girişi olan kısma kadar yapıldı">
       <option name="closed" value="true" />
@@ -135,7 +147,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710256186910</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="genel düzenlemeler yapıldı">
+      <option name="closed" value="true" />
+      <created>1710292241312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710292241312</updated>
+    </task>
+    <task id="LOCAL-00004" summary="genel düzenlemeler yapıldı">
+      <option name="closed" value="true" />
+      <created>1710292393450</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710292393450</updated>
+    </task>
+    <task id="LOCAL-00005" summary="genel düzenlemeler yapıldı">
+      <option name="closed" value="true" />
+      <created>1710292705825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710292705825</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +180,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="kullanıcı girişi olan kısma kadar yapıldı" />
     <MESSAGE value="site temeli oluşturuldu" />
-    <option name="LAST_COMMIT_MESSAGE" value="site temeli oluşturuldu" />
+    <MESSAGE value="genel düzenlemeler yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="genel düzenlemeler yapıldı" />
   </component>
 </project>

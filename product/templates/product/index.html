@@ -2,15 +2,12 @@
 
 {% load static %}
 
-{% block css_files %}
-    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
-{% endblock %}
-
-{% block title %}Ana Sayfa{% endblock %}
+{% block css_files %}<link rel="stylesheet" href="{% static 'css/style.css' %}">{% endblock %}
+{% block title %}Anasayfa{% endblock %}
 
 {% block content %}
 
-    <div class="container mt-3">
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <h1>Anasayfa</h1>
@@ -18,23 +15,25 @@
 
                 {% include 'product/partials/_slider.html' %}
                 <br>
-                <h4>Bu Ayın Tercih Edilenleri</h4>
+                <h4>Popüler Ürünler</h4>
                 <hr>
-                <div class="container">
-                    <div class="row">
+
+                <div class="container ">
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
+                                      space-between="20" free-mode="true">
                         {% for product in products %}
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
+                            <swiper-slide>
+                                <div class="card ">
                                     <img src="{{ product.image.url }}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">{{ product.title }}</h5>
+                                        <h2 class="card-title">{{ product.title }}</h2>
                                         <p class="card-text"></p>
                                         <a href="#" class="btn btn-primary">Keşfet</a>
                                     </div>
                                 </div>
-                            </div>
+                            </swiper-slide>
                         {% endfor %}
-                    </div>
+                    </swiper-container>
                 </div>
 
             </div>
@@ -42,7 +41,4 @@
     </div>
 
 {% endblock %}
-
-{% block js_files %}
-    <script src="{% static 'blog/js/script.js' %}"></script>
-{% endblock %}
+{% block js_files %}<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>{% endblock %}

@@ -1,0 +1,27 @@
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    width: 200px;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+swiper-slide h2{
+    font-size: medium;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
