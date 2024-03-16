@@ -2,7 +2,9 @@
 
 {% load static %}
 
-{% block css_files %}<link rel="stylesheet" href="{% static 'css/style.css' %}">{% endblock %}
+{% block css_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock %}
 {% block title %}Anasayfa{% endblock %}
 
 {% block content %}
@@ -10,16 +12,18 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Anasayfa</h1>
+                <h2 style="font-family: 'MyCustomFont', sans-serif">Anasayfa</h2>
                 <hr>
-
                 {% include 'product/partials/_slider.html' %}
-                <br>
-                <h4>Popüler Ürünler</h4>
+            <br>
+
+                <!--popüler ürünler sliderı-->
+                <h4 style="font-family: 'MyCustomFont', sans-serif">Popüler Ürünler</h4>
                 <hr>
 
                 <div class="container ">
-                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                                      slides-per-view="auto"
                                       space-between="20" free-mode="true">
                         {% for product in products %}
                             <swiper-slide>
@@ -28,6 +32,72 @@
                                     <div class="card-body">
                                         <h2 class="card-title">{{ product.title }}</h2>
                                         <p class="card-text"></p>
+                                        <a href="{% url 'products_by_category' product.slug %}" class="btn btn-primary">Keşfet</a>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                        {% endfor %}
+                    </swiper-container>
+                </div>
+                <hr>
+
+                <!--Keşfet ürünler kutuları-->
+                <div class="container" style="margin-top: 40px; margin-bottom: 10px">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="showcase-box">
+                                <a href="#">
+                                    <img src="{% static 'img/kahve.png' %}" alt="Resim 1" class="showcase-picture">
+                                </a>
+                                <button class="explore-button" href="#">Keşfet</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="showcase-box">
+                                <a href="#">
+                                    <img src="{% static 'img/lokum.png' %}" alt="Resim 2" class="showcase-picture">
+                                </a>
+                                <button class="explore-button" href="#">Keşfet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="margin-top: 10px; margin-bottom: 40px">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="showcase-box">
+                                <a href="#">
+                                    <img src="{% static 'img/kuruyemis.png' %}" alt="Resim 1" class="showcase-picture">
+                                </a>
+                                <button class="explore-button" href="#">Keşfet</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="showcase-box">
+                                <a href="#">
+                                    <img src="{% static 'img/cikolata.png' %}" alt="Resim 2" class="showcase-picture">
+                                </a>
+                                <button class="explore-button" href="#">Keşfet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- popüler bloglar -->
+            <h4 style="font-family: 'MyCustomFont', sans-serif">Armada Blog</h4>
+                <hr>
+
+                <div class="container ">
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
+                                      slides-per-view="auto"
+                                      space-between="20" free-mode="true">
+                        {% for blog in blogs %}
+                            <swiper-slide>
+                                <div class="card" style= "height: 400px;">
+                                    <img src="{{ blog.image.url }}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="card-title">{{ blog.title }}</h2>
+                                        <p class="card-text"></p>
                                         <a href="#" class="btn btn-primary">Keşfet</a>
                                     </div>
                                 </div>
@@ -35,10 +105,12 @@
                         {% endfor %}
                     </swiper-container>
                 </div>
-
+                <hr>
             </div>
         </div>
     </div>
 
 {% endblock %}
-{% block js_files %}<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>{% endblock %}
+{% block js_files %}
+    <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

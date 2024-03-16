@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+from blog.models import Blog
 from product.models import Product, ProductCategory, Slider
 
 
@@ -6,6 +8,7 @@ def index(request):
     context = {
         'sliders': Slider.objects.all(),
         "products": Product.objects.filter(is_home=True),
+        'blogs': Blog.objects.filter(is_home= True),
     }
     return render(request, "product/index.html", context)
 

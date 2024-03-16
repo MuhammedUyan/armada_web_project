@@ -6,7 +6,7 @@ swiper-container {
 
 swiper-slide {
     width: 200px;
-    text-align: center;
+    text-align: start;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -19,9 +19,40 @@ swiper-slide img {
     height: 100%;
     object-fit: cover;
 }
-swiper-slide h2{
+
+swiper-slide h2 {
     font-size: medium;
     white-space: nowrap;
     overflow: hidden;
 }
 
+.showcase-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.showcase-picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.explore-button {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Opaklık değişimini yumuşaklaştıralım */
+}
+
+.showcase-box:hover .explore-button {
+    background-color: #657956;
+}

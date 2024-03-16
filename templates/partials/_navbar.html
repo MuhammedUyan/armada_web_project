@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #657956;">
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #657956; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
     <div class="container">
         <a class="navbar-brand" href="{% url 'home' %}">
             <img src="{% static 'img/logo.png' %}" alt="" width="150">
@@ -9,21 +9,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav me-auto" style="font-family: 'MyCustomFont', sans-serif">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}">Anasayfa</a>
+                    <a class="nav-link" href="{% url 'home' %}">ANASAYFA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'products' %}">Ürünlerimiz</a>
+                    <a class="nav-link" href="{% url 'products' %}">ÜRÜNLERİMİZ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Mağazalarımız</a>
+                    <a class="nav-link" href="">MAĞAZALARIMIZ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blogs' %}">Blog</a>
+                    <a class="nav-link" href="{% url 'blogs' %}">BLOG</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Hakkımızda</a>
+                    <a class="nav-link" href="">HAKKIMIZDA</a>
                 </li>
             </ul>
         </div>

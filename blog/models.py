@@ -21,7 +21,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=200)
     image = models.ImageField(upload_to='blogs')
     description = RichTextField()
-    is_active = models.BooleanField(default=False)
+    is_home = models.BooleanField(default=False)
     slug = models.SlugField(null=False, blank=True, unique=True, db_index=True, editable=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     def __str__(self):

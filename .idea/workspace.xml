@@ -4,19 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76bf3705-902d-4b86-81e7-cefda64016a3" name="Changes" comment="genel düzenlemeler yapıldı">
-      <change afterPath="$PROJECT_DIR$/product/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/instagram-seeklogo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/partials/_footer.html" afterDir="false" />
+    <list default="true" id="76bf3705-902d-4b86-81e7-cefda64016a3" name="Changes" comment="anasayfaya slider eklendi ve footer düzenlendi">
+      <change afterPath="$PROJECT_DIR$/product/static/fonts/Posterama.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/static/img/cikolata.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/static/img/kahve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/static/img/kuruyemis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/static/img/lokum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/partials/_feature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/armadaProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/armadaProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/product/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/templates/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/templates/product/partials/_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product/partials/_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/templates/product/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/partials/_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/_productcategories.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_productcategories.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +39,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -60,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/armadaProject/static/img",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/armadaProject/static",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -73,15 +83,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\armadaProject\static" />
+      <recent name="C:\Users\User\PycharmProjects\armadaProject\product\static" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\static\img" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\product\static\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\armadaProject\static\lib\owlcarousel" />
+      <recent name="C:\Users\User\PycharmProjects\armadaProject\product\static\img" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\static\img" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\product\templates\product" />
       <recent name="C:\Users\User\PycharmProjects\armadaProject\product\templates\product\partials" />
-      <recent name="C:\Users\User\PycharmProjects\armadaProject\static\css" />
-      <recent name="C:\Users\User\PycharmProjects\armadaProject\blog\static\blog\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -129,7 +141,9 @@
       <workItem from="1710160940676" duration="29722000" />
       <workItem from="1710243243743" duration="11449000" />
       <workItem from="1710274470259" duration="16224000" />
-      <workItem from="1710418107100" duration="22279000" />
+      <workItem from="1710418107100" duration="22778000" />
+      <workItem from="1710546563930" duration="2564000" />
+      <workItem from="1710591753786" duration="26600000" />
     </task>
     <task id="LOCAL-00001" summary="kullanıcı girişi olan kısma kadar yapıldı">
       <option name="closed" value="true" />
@@ -171,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710292705825</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="anasayfaya slider eklendi ve footer düzenlendi">
+      <option name="closed" value="true" />
+      <created>1710454979783</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710454979783</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +203,7 @@
     <MESSAGE value="kullanıcı girişi olan kısma kadar yapıldı" />
     <MESSAGE value="site temeli oluşturuldu" />
     <MESSAGE value="genel düzenlemeler yapıldı" />
-    <option name="LAST_COMMIT_MESSAGE" value="genel düzenlemeler yapıldı" />
+    <MESSAGE value="anasayfaya slider eklendi ve footer düzenlendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="anasayfaya slider eklendi ve footer düzenlendi" />
   </component>
 </project>

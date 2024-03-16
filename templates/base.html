@@ -3,8 +3,16 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <style>
+        @font-face {
+            font-family: "MyCustomFont";
+            src: url("../static/fonts/Posterama.ttf") format("truetype");
+        }
+    </style>
     {% block css_files %}{% endblock %}
     <title>{% block title %}{% endblock %} | Armada</title>
 </head>
@@ -14,14 +22,16 @@
 <br><br><br><br><br>
 
 <main class="container">
-{% block content %}
-{% endblock %}
+    {% block content %}
+    {% endblock %}
 </main>
 
+{% include 'partials/_feature.html' %}
 {% include 'partials/_footer.html' %}
 
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/base.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 {% block js_files %}{% endblock %}
 
